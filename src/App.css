@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/iteration-1-images/home-banner.png");
+  background-size: cover; /* Resmi kapsayacak şekilde ölçekler */
+  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */
+  background-position: center;
+  display: flex;
+  align-items: flex-start; /* Başlığı üstte hizalar */
+  min-width: 300px;
+  min-height: 100vh;
+}
+
+
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  color: white;
+  font-family: sans-serif;
+  margin: 0; /* Varsayılan üst margin'i sıfırlar */
+  padding: 20px; /* İstediğiniz kadar padding ekleyebilirsiniz */
+}
+h2
+{
+  font-size: 3.2em;
+  font-weight: lighter;
+  color: white;
+  font-family: sans-serif;
+  margin: 0; /* Varsayılan üst margin'i sıfırlar */
+  padding: 0px; /* İstediğiniz kadar padding ekleyebilirsiniz */
+  
+  
+}
+.custom-button {
+  background-color: #fdc913; 
+  border: none;
+  color: black; /* Yazı rengi */
+  padding: 10px 42px; /* Butonun iç boşlukları */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 28px; /* Yuvarlatılmış köşeler */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 50px;
+}
+
+
+
+
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
