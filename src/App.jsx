@@ -1,27 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
 import './App.css'
+import { OrderPizza } from './components/OrderPizza'
+import { Switch,Route } from 'react-router-dom/cjs/react-router-dom.min'
+import { HomePage } from './components/HomePage'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(false)
+  function handleClick()
+  {
+   <Link to="/OrderPizza"></Link>
+   setCount(true);
+  }
 
   return (
     <>
-      <body>
-
-        <div>
-          <h1>Teknolojik Yemekler</h1>
-          <h2>KOD ACIKTIRIR</h2>
-          <h2>PİZZA, DOYURUR</h2>
-          <button class="custom-button">ACIKTIM</button>
-
-        </div>
-        
+       <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
           
+          <Route path="/siparis">
+          <OrderPizza/>
 
-        
-      </body>
+          </Route>
+        </Switch>
     </>
   )
 }
